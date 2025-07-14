@@ -1,0 +1,48 @@
+ROW,CODE,OPERATION,ACTION,
+
+SALES
+Vending Online Sales,6585,X,X,Vending - Total Online,
+Office Online Sales,6585,PLUS,X,Office - Online - Gross Sales,
+Fuel Online Sales (DO NOT RING),X,PLUS,X,Fuel - Online - Gross Sales,
+Total Online Sales (line 804),X,EQUALS,X,SUM,
+Vending Online Sales CASHLESS (line 308),40201,X,X,Cashless -  Online - Cashless Online Sales,
+INSTANT CASHED
+Vending Instant Cashed,6588,X,X,Vending - Instant Tick Cashed,
+Office Instant Cashed,6588,PLUS,X,Office - Instant - Cashes
+Fuel Instant Cashed (DO NOT RING),X,X,Fuel - Instant - Cashes
+Total Instant Cashed (line 937),X,EQUALS,X,SUM,
+ONLINE CASHED
+Vending Online Cashed,6586,X,X,Vending - Online Tick. Cashed,
+Office Online Cashed,6586,PLUS,X,Office - Online - Cashes,
+Fuel Online Cashed  (DO NOT RING),X,PLUS,X,Fuel - Online - Cashes,
+Online Winners Cashed,X (line 936),X,EQUALS,X,SUM,
+MY Lotto Adjustments (line 925),X,X,X,Adjustments,
+VENDING INSTANT INVENTORY
+Beginning Inventory,X,X,X,Previous Ending Inventory,
+Activations (line 807),X,PLUS,X,Today's Activations,
+Total Instant Sold,6587,MINUS,X,Loan to 31,Vending - Total Instant
+Subtotal (Should match instant ending inventory),X,EQUALS,X,SUM,
+Torn Tickets (Activated Tickets in Safe),X,PLUS,X,Activated Tickets in Safe,
+Credit Issued for Torn Tickets (line 938),X,MINUS,X,Credit Issued for Torn Tickets,
+Total Ending Inventory,X,EQUALS,X,SUM,
+Total Instant Sold Cashless,40200,X,X,Cashless - Instant - Cashless Instant Sales,
+FUEL INSTANT INVENTORY
+Beginning Inventory,X,X,X,Previous Ending Inventory,
+Activations (line 807),X,PLUS,X,Activations,
+Total Instant Sold (DO NOT RING),X,MINUS,Loan to 100,Number Fuel told you,
+Subtotal,X,EQUALS,X,Subtotal,
+Torn Tickets (Activated Tickets in Safe),X,PLUS,X,Torn Tickets,
+Credit Issued for Torn Tickets (line 938),X,MINUS,X,Credit Issued,
+Total Ending Inventory,X,EQUALS,X,SUM
+
+
+SERVICE DESK INSTANT INVENTORY
+Beginning Inventory,X,X,X,Previous Ending Inventory,
+Activations (line 807),X,PLUS,X,Activations,
+Total Instant Sold (Office Instants DO NOT RING),X,MINUS,Loan to 31,Office Instants,
+Subtotal,X,EQUALS,X,Subtotal,
+Torn Tickets (Activated Tickets in Safe),X,PLUS,X,Torn Tickets,
+Credit Issued for Torn Tickets (line 938),X,MINUS,X,Credit Issued,
+Total Ending Inventory,X,EQUALS,X,SUM,
+Total Instant Sold (VENDING + FUEL + SERVICE DESK),X,X,X,SUM,
+Total Ending Inventory for Safe Management (VENDING + FUEL + SERVICE DESK + TORN TICKETS IN SAFE),X,X,X,
